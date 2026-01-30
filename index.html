@@ -85,11 +85,11 @@
       <div class="top-bar">
         <div class="container">
           <h1 class="logo">HEALTH</h1>
-          <button class="menu-toggle" aria-label="Open menu">
-            <span class="hamburger-line"></span>
-            <span class="hamburger-line"></span>
-            <span class="hamburger-line"></span>
-          </button>
+          <!-- <button class="menu-toggle" aria-label="Open menu"> -->
+            <!-- <span class="hamburger-line"></span> -->
+            <!-- <span class="hamburger-line"></span> -->
+            <!-- <span class="hamburger-line"></span> -->
+          <!-- </button> -->
         </div>
       </div>
       <div class="news-ticker">
@@ -153,7 +153,8 @@
           <ul>
             <li class="kit-option k1">
               <a href="checkout?products=15:1"
-				 title="2 BOTTLES">
+				 title="2 BOTTLES"
+				 style="text-decoration: none !important;">
                 <div class="header">STARTER</div>
 
                 <div class="main">
@@ -185,7 +186,8 @@
 
             <li class="kit-option best-option">
               <a href="checkout?products=17:1"
-				 title="6 BOTTLES">
+				 title="6 BOTTLES"
+				 style="text-decoration: none !important;">
                 <div class="header">MOST POPULAR</div>
 
                 <div class="main">
@@ -230,7 +232,8 @@
 
             <li class="kit-option k3">
               <a href="checkout?products=16:1"
-				 title="3 BOTTLES">
+				 title="3 BOTTLES"
+				 style="text-decoration: none !important;">
                 <div class="header">STANDARD</div>
 
                 <div class="main">
@@ -703,15 +706,47 @@
     <footer>
       <div class="data_footer">
         <div class="container">
-          <nav>
-            <a href="terms.html">Terms &amp; Conditions</a>
-            <a href="privacy.html">Privacy Policy</a>
-            <a href="contact.html">Contact</a>
-            <a href="disclaimer.html">Disclaimer</a>
-            <a href="reference.html">Reference</a>
-            <a href="refund.html">Refund</a>
-            <a href="shipping.html">Shipping</a>
-          </nav>
+			<style>
+			  
+			  .footer-nav-container {
+				background-color: #222;          
+				padding: 20px;                   
+				font-family: "Inter", sans-serif; 
+				
+				
+				display: flex;                   
+				justify-content: center;
+				align-items: center;    
+				flex-wrap: wrap;        
+				gap: 20px;              
+				text-align: center;     
+			  }
+
+			  /* Стили ссылок внутри этого блока */
+			  .footer-nav-container a {
+				color: white !important;
+				text-decoration: none !important;
+				font-size: 14px;
+				transition: 0.2s;                
+			  }
+
+			  /* Эффект при наведении */
+			  .footer-nav-container a:hover {
+				text-decoration: underline !important;
+			  }
+			</style>
+
+		<div class="footer-nav-container">
+		  <nav>
+			<a href="terms">Terms &amp; Conditions</a>
+			<a href="privacy">Privacy Policy</a>
+			<a href="contact">Contact</a>
+			<a href="disclaimer">Disclaimer</a>
+			<a href="reference">Reference</a>
+			<a href="refund">Refund</a>
+			<a href="shipping">Shipping</a>
+		  </nav>
+		</div>
 
           <div class="disclaimer">
             <p>
@@ -787,7 +822,7 @@
     </script>
 
     <script>
-      var delaySeconds = 10; 
+      var delaySeconds = 3164; 
       var player = document.querySelector("vturb-smartplayer");
 
       player.addEventListener("player:ready", function () {
