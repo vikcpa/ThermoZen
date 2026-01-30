@@ -3,7 +3,9 @@
 /* ========================================
  * INLINE STYLES FROM INDEX2.HTML
  * ======================================== */
-
+a {
+    text-decoration: none !important;
+}
 /* Video container and player fixes */
 .video-container {
   background: transparent !important;
